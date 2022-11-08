@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>DIC</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sale.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav">
+        <a href="index.html" class="logo"><img src="images/sample_logo_k.png"></a>
+        <ul class="global_nav">
+          <a href="index.html" class="global_nav_item">
+            Home
+          </a>
+          <a href="#menu" class="global_nav_item">
+            Menu
+          </a>
+          <a href="contact.html" class="global_nav_item">
+            Contact
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section class="section_VENTE">
+        <div class="Vente">
+            <h1>Vente de Grains de café</h1>
+        </div>
+    </section>
+    <section class="section_VENTE menu_section">
+        <div class="titre_menu">
+            <h1 class="gamme">Gamme de produits </h1>
+        </div>
+        <ul class="menu cafe" >
+            <li class="menu-cafe">
+                <div class="produit">
+                    <h2 class="nom_produit">Mélange original 200g</h2>
+                    <p class="prix">JPY 500</p>
+                </div>
+                <img src="images/sample_cafe1.jpg" class="item_caf">
+            </li class="menu-cafe">
+            <li class="menu-cafe">
+                <div class="produit">
+                    <h2 class="nom_produit">Mélange original 500g</h2>
+                    <p class="prix">JPY 900</p>
+                </div>
+                <img src="images/sample_cafe1.jpg"class="item_caf">
+            </li>
+            <li class="menu-cafe">
+                <div class="produit">
+                    <h2 class="nom_produit">Mélange spécial 200g</h2>
+                    <p class="prix">JPY 700</p>
+                </div>
+                <img src="images/sample_cafe3.jpg" class="item_caf">
+            </li>
+            <li class="menu-cafe">
+                <div class="produit">
+                    <h2 class="nom_produit">Mélange spécial 500g</h2>
+                    <p class="prix">JPY 1200</p>
+                </div>
+                <img src="images/sample_cafe3.jpg" class="item_caf">
+            </li>
+        </ul>
+        <h2>Informations sur les frais d’expédition</h2>
+        <ul>
+          <li> Si le montant total est inférieur à 2000 yens , les frais d'expédition sont de 500 yens</li>
+          <li> 250 yens pour 2000 yens ou plus </li>
+          <li> Gratuit pour plus de 3000 yens </li>
+        </ul>
+        
+
+
+    </section>
+    <section class="section_VENTE">
+      <h2> Commande </h2>
+      <form>
+        <p>Veuillez selectionner un produit </p>
+        <div>
+          <select id="produits">
+            <option hidden value="0">Selectionner un produit</option>
+            <option value="500">Mélange original 200g 500 yens </option>
+            <option value="900">Mélange original 500g 900 yens</option>
+            <option value="700">Mélange spécial 200g 700 yens</option>
+            <option value="1200">Mélange spécial 500g 1200 yens</option>
+          </select>  
+          <p >Veuillez sélectionner une quantité</p>
+          <input type="number" min=1 max =5 id="number" required>
+        </div>
+        <br>
+        <input type="button" class="but" value="ajouter" onclick="addition()">
+        <input type="button" class="but" value="totalité" onclick="tot()">
+      </form>
+      <script type="text/javascript" src="javascripts/sale.js"></script>
+    </section>
+  <footer class="foot">
+    <nav>
+      <ul class="list">
+        <a href="index.html"class="itm">
+          Home
+        </a>
+        <a href="index.html" class="itm">
+          Menu
+        </a>
+        <a href="contact.html" class="itm">
+          Contact
+        </a>
+        <a href="index.html" class="itm">
+          
+            <img src="images/sample_logo_w.png" class="footlogo" >
+        </a>
+      </ul>
+    </nav>
+    <p class="footer_right">PLONGEZ DANS CODE Corp. Tous droits réservés.</p>
+  </footer>
+  </body>  
